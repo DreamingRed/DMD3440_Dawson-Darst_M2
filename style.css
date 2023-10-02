@@ -1,0 +1,63 @@
+body {
+    margin:0;
+    background-color: lightblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about-page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-items: center;
+    gap: 1em;
+}
+
+.about-page img {
+    max-width: 50%;
+    display: inline-block;
+    text-align: center;
+    transform:scale(1);
+    transition: transform .5s;
+}
+
+.about-page img:hover {
+    transform:scale(1.5)
+}
+
+.home-page ul {
+    margin: 0;
+    padding: 0;
+    width: 75%;
+    background-color: white;
+    list-style-type: none;
+    text-align:center
+}
+
+.home-page li {
+    border-bottom: 1px solid lightblue;
+}
+
+li a {
+    display: block;
+    padding: 1em 0;
+    font-size: 2em;
+    background-color: darkslateblue;
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: darkslateblue;
+    background-color: white;
+    transition: all .5s
+}
